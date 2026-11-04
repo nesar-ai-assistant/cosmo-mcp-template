@@ -4,9 +4,9 @@ Keys are short dataset ids used by every tool's ``dataset`` argument.
 
 Schema (family-wide):
     "title":    human name
-    "products": {"tier1": [...], "tier2": [...], "tier3": [...]}   (omit / [] when absent)
-        tier1 = raw / catalog-level, tier2 = summary statistics + covariance,
-        tier3 = published inference (chains, parameter constraints) - comparison only
+    "products": {"catalog": [...], "summary_statistic": [...], "published_result": [...]}
+        catalog = object-level data; summary_statistic = measurements with covariance;
+        published_result = chains / parameter constraints, comparison only ([] when absent)
     "access":   "bundled" | "download" | "remote-query" (+ note on size)
     "urls":     verified source URLs
     "citation": release paper(s)
@@ -16,7 +16,7 @@ Schema (family-wide):
 DATASETS: dict[str, dict] = {
     "example": {
         "title": "Example dataset (replace)",
-        "products": {"tier1": ["example catalog"], "tier2": ["example summary statistic"], "tier3": []},
+        "products": {"catalog": ["example catalog"], "summary_statistic": ["example summary statistic"], "published_result": []},
         "access": "bundled",
         "urls": [],
         "citation": "",

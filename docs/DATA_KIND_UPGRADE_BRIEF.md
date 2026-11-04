@@ -1,4 +1,11 @@
-# Tier upgrade brief (cosmo-*-mcp-server family, 2026-11)
+# Data-kind upgrade brief
+
+> REVISION: the user does NOT want "tier 1/2/3" labels anywhere in the servers ("it's the content that matters,
+> not the label"). Use `@data_kind("catalog" | "summary_statistic" | "published_result" | "meta")`, registry
+> products keyed `catalog` / `summary_statistic` / `published_result`, and plain wording in docs/skills/README
+> (e.g. "Data products" table with columns Catalogs / Summary statistics / Published results). The tier wording
+> below maps tier 1 = catalog, tier 2 = summary_statistic, tier 3 = published_result.
+ (cosmo-*-mcp-server family, 2026-11)
 
 The user (Nesar, Argonne cosmologist) distinguishes three DATA TIERS:
 - **Tier 1, raw / catalog-level:** per-object catalogs, photometry and light curves, per-SN SALT2 fits, shear catalogs, CMB maps, galaxy + random catalogs.
