@@ -1,0 +1,1 @@
+TEMPLATE instructions. Start with list_template_datasets; list_template_skills for recipes. Tools that write files take an output_dir and return ArtifactResult; pass file paths between tools, never raw arrays. Heavy tools can run on ALCF/NERSC via the hep-genesis IRI dispatch engine (set_dispatch / export_dispatch_pack); this server holds no facility credentials.
