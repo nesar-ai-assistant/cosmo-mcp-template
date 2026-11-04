@@ -23,6 +23,7 @@ dev = ["pytest", "anyio", "ruff"]
 [tool.mcp-server]
 name = "Template MCP Server"
 skill_prefix = "template"
+port = 8000
 instructions_file = "mcp_server/INSTRUCTIONS.md"
 tool_modules = [
     "tools.meta",
